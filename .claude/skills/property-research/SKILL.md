@@ -24,9 +24,18 @@ always matter; the rest can default to "flexible").
 
 ## Step 2 — Search public sources
 
-Use `WebSearch` / `WebFetch` against public listing sources — Zillow, Redfin, Realtor.com,
-Apartments.com, local MLS-adjacent broker sites, and Craigslist/local classifieds. Site-restrict
-searches (e.g. `site:zillow.com`) and query by neighborhood + price + bed/bath to cut down noise.
+Use `WebSearch` / `WebFetch` against public listing sources. Pick sources based on the client's
+market:
+
+- **US default:** Zillow, Redfin, Realtor.com, Apartments.com, local MLS-adjacent broker sites,
+  Craigslist/local classifieds.
+- **Kenya:** BuyRentKenya (buyrentkenya.com), Jiji Kenya (jiji.co.ke), plus Facebook Marketplace
+  and local estate-agent Facebook groups (see the Facebook note below — group/marketplace posts
+  still need to be pasted in, they can't be crawled).
+
+Site-restrict searches (e.g. `site:buyrentkenya.com`, `site:jiji.co.ke`) and query by
+neighborhood/estate + price + bed/bath to cut down noise. Note Jiji listing prices are often
+negotiable asking prices, not fixed — flag this in the shortlist rather than treating them as firm.
 
 For each candidate property capture: address (or approximate location if the source hides it),
 price, beds/baths, sqft, listing source + URL, days on market if shown, and one or two lines on
