@@ -17,7 +17,9 @@ always matter; the rest can default to "flexible").
 
 - Client name (for labeling the roadmap only — never needed for the search itself)
 - Location(s): city/neighborhood/zip, plus any radius or "must be near X" constraints
-- Budget range (purchase price or rent)
+- Budget range (purchase price or rent) — and whether it's a **hard ceiling** or a **flexible
+  target** the client will exceed for the right property (e.g. "will pay market value"). Get this
+  explicitly; don't assume a stated number is a hard cutoff.
 - Property type: single-family, condo, multi-family, land, etc.
 - Must-haves vs. nice-to-haves (beds/baths, sqft, yard, parking, school district, move-in date)
 - Deal type: buy, rent, or off-market/investment lead
@@ -58,9 +60,21 @@ content. Handle it like this:
 
 ## Step 3 — Score and shortlist
 
-Rank properties against the brief's must-haves first, then nice-to-haves. Drop anything outside
-budget or missing a must-have unless the user asked for stretch options — if so, label them
-clearly as stretch/compromise picks rather than mixing them in unlabeled.
+Rank properties against the brief's must-haves first, then nice-to-haves. How to handle budget
+depends on what Step 1 established:
+
+- **Hard ceiling:** drop anything over budget or missing a must-have, unless the user asked for
+  stretch options — if so, label them clearly as stretch/compromise picks in a separate section
+  rather than mixing them in unlabeled.
+- **Flexible/market-value budget:** don't drop over-budget properties into a separate "stretch"
+  section — merge everything into one shortlist ranked by fit against the must-haves (title/deed
+  status, access, utilities, amenities — not price), and let price be one visible column rather
+  than a filter. Still call out anything unusually far from the stated range so the client isn't
+  surprised.
+
+Either way, missing must-have information (e.g. a listing that never mentions utilities or title
+status) should lower a property's rank and get flagged as needing verification — don't assume
+it's fine just because the price fits.
 
 ## Step 4 — Deliver the roadmap
 
